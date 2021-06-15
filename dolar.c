@@ -9,8 +9,8 @@ int main(void) {
   dolar = real * 5.05;
   euro = real * 6.12;
 
-  printf("O valor da passagem em US$ é %.2f\n", dolar);
-  printf("O valor da passagem em US$ é € %.2f\n", euro);
+  printf("O valor da passagem em US$ é US$%.2f\n", dolar);
+  printf("O valor da passagem em € é €%.2f\n", euro);
 
   return 0;
 }
