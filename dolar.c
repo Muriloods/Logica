@@ -1,4 +1,4 @@
-#include <stdio.h>
+/*#include <stdio.h>
 
 int main(void) {
 
@@ -13,4 +13,4 @@ int main(void) {
   printf("O valor da passagem em € é €%.2f\n", euro);
 
   return 0;
-}
+}*/
