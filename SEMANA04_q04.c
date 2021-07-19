@@ -1,4 +1,4 @@
-#include <stdio.h>
+/* #include <stdio.h>
 
 int main(void) {
   int dia, mes, ano, fim;
@@ -115,4 +115,4 @@ int main(void) {
 
 
   return 0;
-}
+} */
