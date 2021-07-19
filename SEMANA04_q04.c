@@ -1,35 +1,118 @@
-/* #include <stdio.h>
+#include <stdio.h>
 
 int main(void) {
-  float a, b, c, maior, menor, meio;
-  scanf("%f%f%f", &a, &b, &c);
-  
-  if(a == b && b == c)
+  int dia, mes, ano, fim;
+  scanf("%d%d%d%d", &dia, &mes, &ano, &fim);
+  switch(fim)
   {
-    printf("EQUILATERO\n");
-  }
-  else
-  {
-    maior = a > b && a > c ? a : b > a && b > c ? b : c;
-    menor = a <= b && a <= c ? a : b <= a && b <= c ? b : c;
-    meio = a <= b && a <= c && b <= c ? b : b <= a && b <= c && a <= c ? a : c;
+    case 1:
+    case 2:
+    case 3:
 
-    if(!((menor + meio) > maior))
-    {
-      printf("NAO FORMA\n");
-    }
-    else
-    {
-      if(a == b || a == c || b == c)
+      if(ano <= 2021)
       {
-        printf("ISÓSCELES\n");
+        if(mes <= 4)
+        {
+          if(dia <= 30)
+          {
+            printf("NO PRAZO\n");
+          }
+          else
+          {
+            printf("ATRASADO\n");
+          }
+        }
+        else
+        {
+          printf("ATRASADO\n");
+        }
       }
       else
       {
-        printf("ESCALENO\n");
+        printf("ATRASADO\n");
       }
-    }
+
+      break;
+    case 4:
+    case 5:
+    case 6:
+
+      if(ano <= 2021)
+      {
+        if(mes <= 5)
+        {
+          if(dia <= 31)
+          {
+            printf("NO PRAZO\n");
+          }
+          else
+          {
+            printf("ATRASADO\n");
+          }
+        }
+        else
+        {
+          printf("ATRASADO\n");
+        }
+      }
+      else
+      {
+        printf("ATRASADO\n");
+      }
+      break;
+    case 7:
+    case 8:
+      if(ano <= 2021)
+      {
+        if(mes <=6)
+        {
+          if(dia <= 30)
+          {
+            printf("NO PRAZO\n");
+          }
+          else
+          {
+            printf("ATRASADO\n");
+          }
+        }
+        else
+        {
+          printf("ATRASADO\n");
+        }
+      }
+      else
+      {
+        printf("ATRASADO\n");
+      }
+      break;
+    
+    case 9:
+    case 0:
+      if(ano <= 2021)
+      {
+        if(mes <= 7)
+        {
+          if(dia <= 31)
+          {
+            printf("NO PRAZO\n");
+          }
+          else
+          {
+            printf("ATRASADO\n");
+          }
+        }
+        else
+        {
+          printf("ATRASADO\n");
+        }
+      }
+      else
+      {
+        printf("ATRASADO\n");
+      }
+      break;
   }
 
+
   return 0;
-} */
+}
